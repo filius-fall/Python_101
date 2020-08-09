@@ -12,17 +12,26 @@
 #             "handlers":["fileHandler"],
 #             "level":"INFO",
 
-#         },
-#         "formatters":{
-#             "myFormatter":{
-#                 "format":"%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-#             }
 #         }
-        
 #     }
+#     "formatters":{
+#            "myFormatter":{
+#                "format":"%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+#            }
+#        }
+        
 # }
-import logging
-import logging.config
+# import logging
+# import logging.config
+
+
+    
+    # logging.config.dictConfig(dictLogConfig)
+    # logger = logging.getLogger("exampleApp")
+
+    # logger.info("Program started")
+    # result = 7
+    # logger.info("Done!")
 
 
 def log_file():
@@ -32,7 +41,7 @@ def log_file():
             "fileHandler":{
                 "class":"logging.FileHandler",
                 "formatter":"myFormatter",
-                "filename":"config2.log"
+                "filename":"logs/config2.log"
             }
         },
         "loggers":{
@@ -41,21 +50,14 @@ def log_file():
                 "level":"INFO",
             }
         },
+
         "formatters":{
             "myFormatter":{
                 "format":"%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
             }
         }
         
+        
     }
     return dictLogConfig
-    
-    # logging.config.dictConfig(dictLogConfig)
-    # logger = logging.getLogger("exampleApp")
-
-    # logger.info("Program started")
-    # result = 7
-    # logger.info("Done!")
-
-if __name__ == "__main__":
-    log_file()
