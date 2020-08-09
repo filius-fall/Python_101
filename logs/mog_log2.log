@@ -1,0 +1,6 @@
+%(asctime)s - %(name)s - %(levelname)s - %(message)s
+%(asctime)s - %(name)s - %(levelname)s - %(message)s
+2020-08-08 14:07:19,308 - example - INFO - Program Has Started
+2020-08-08 14:07:19,308 - example - INFO - Program Executed
+2020-08-08 14:09:15,730 - example - INFO - Program Has Started
+2020-08-08 14:09:15,730 - example - INFO - Program Executed
